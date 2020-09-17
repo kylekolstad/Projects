@@ -1,0 +1,142 @@
+.posts_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.post_items_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%; 
+}
+
+.post_item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row; 
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.post_user_img {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.post_user_img .image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url("../../assets/images/profile_picture.svg");
+    background-size: cover;
+}
+
+
+.post_details_wrapper {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.post_user_details {
+    height: 10%;
+}
+
+.post_user_details .name {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fdcb6e;
+}
+
+.post_user_details .title {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #55efc4;
+    padding-left: 5px;
+}
+
+.post_datetime {
+    color: #b2bec3;
+    font-size: .9em;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.post_content_text {
+    margin: 10px 0;
+    color: #636e72;
+}
+
+.post_content_image {
+    width: 100%;
+}
+
+.post_content_image img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.post_options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.post_like, 
+.post_comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    cursor: pointer;
+}
+
+.post_like i,
+.post_comment i {
+    color: #b2bec3;
+    cursor: pointer;
+    padding-right: 2px;
+    transition: .3s;
+}
+
+.post_like i:hover,
+.post_comment i:hover {
+    color: #00b894;
+}
+
+.post_like span,
+.post_comment span {
+    font-weight: 600;
+    padding-left: 2px;
+    color: #b2bec3;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.post_like:hover i, 
+.post_like:hover span,
+.post_comment:hover i,
+.post_comment:hover span {
+    color: #00b894;
+}
+
+
+
+
+
+
+
+
+

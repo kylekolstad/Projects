@@ -1,0 +1,39 @@
+<p class="cm_sign_up_main_message">Gather 'round</p>
+<p class="cm_sign_up_secondary_message">There's space for one more...</p>
+
+
+<form #myForm="ngForm" (ngSubmit)="register(myForm)" style="padding: 10px 40px;" ngNativeValidate>
+      <div class="col-xs-5">
+        <input [(ngModel)] = "firstname" type="text" class="form-control" placeholder="Firstname" name="firstname" required ngModel>
+      </div>
+      <div class="col-xs-5">
+        <input [(ngModel)] = "lastname" type="text" class="form-control" placeholder="Lastname" name="lastname" required ngModel>
+      </div>
+
+      
+      <div class="col-xs-1"></div>
+      <div class="col-xs-10">
+        <input [(ngModel)] = "email" type="email" class="form-control" placeholder="Email" name="email" required ngModel>
+      </div>
+      
+      <div class="col-xs-5">
+        <input [(ngModel)] = "username" type="text" class="form-control" placeholder="Username" name="username" required ngModel>
+      </div>
+      <div class="col-xs-5">
+        <input [(ngModel)] = "password" type="password" class="form-control" placeholder="Password" name="password" required ngModel>
+      </div>
+
+      <div class="col-xs-5">
+        <input [(ngModel)] = "dob" type="date" class="form-control" placeholder="Date of birth" name="dob"  ngModel>
+      </div>
+      <div class="col-xs-5">
+        <input [(ngModel)] = "title" type="text" class="form-control" placeholder="title" name="title"  ngModel>
+      </div>
+
+      <div class="col-xs-3"></div>
+      <div class="col-xs-5">
+        <button type="submit"  class="btn btn-cm_default text-center">Sign Up</button>
+      </div>
+
+  </form>
+

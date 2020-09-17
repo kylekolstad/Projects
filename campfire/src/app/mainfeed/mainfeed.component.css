@@ -1,0 +1,16 @@
+.feed_wrapper {
+    height: 100%;
+    width: 100%;  
+}
+
+.create_post {
+    height: 15%;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.component_spacing { 
+    height: 7%;
+    border-bottom: 4px solid #eff0f1;
+}

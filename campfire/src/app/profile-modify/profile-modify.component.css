@@ -1,0 +1,141 @@
+.edit_profile_wrapper {
+    width: 100%;
+    height: 90%;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.edit_profile_splitter {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 60%;
+    align-items: center;
+}
+
+.picture_change_wrapper {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid #fdcb6e;
+    position: relative;
+}
+
+.change_option {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.change_option i{
+    color: #ecf0f1;
+    font-size: 3em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.change_option i:hover{
+    color: #00b894;
+}
+
+.text_content_change_wrapper {
+    width: 45%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.my_button {
+    width: 100%;
+    background-color: #00b894;
+}
+
+.my_button:focus {
+    color: white !important;
+    background-color: #00b894;
+}
+
+.bio_change {
+    margin-bottom: 15px;
+}
+
+.bio_change textarea {
+    height: 100%;
+    width: 100%;
+    padding: 7px;
+    font-size: 1.1em;
+    color:  #636e72;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 2px solid #eff0f1;
+    resize: none;
+    transition: .3s;
+}
+
+.bio_change textarea::placeholder {
+    color: #b2bec3;
+}
+
+.bio_change textarea:focus {
+    outline: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 2px solid #00b894;
+    -webkit-appearance:none !important;
+}
+
+.bio_change textarea:hover {
+    border-bottom: 2px solid #00b894;
+}
+.title_change:hover input {
+    border-bottom: 2px solid #00b894;
+}
+
+.title_change input {
+    color: #636e72;
+    font-size: 1.1em;
+    padding: 7px;
+    margin-bottom: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ecf0f1;
+    width: 100%;
+    transition: .3s;
+}
+
+.title_change input:focus {
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #00b894;
+    width: 100%;
+}
+
+.title_change input::placeholder {
+    color: #b2bec3;
+}
+
+.text_content_change_wrapper span {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #b2bec3
+}

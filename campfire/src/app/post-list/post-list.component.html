@@ -1,0 +1,28 @@
+<div class="posts_wrapper">
+    <div class="post_items_wrapper">
+        <!-- First Post -->
+            <div class="post_item" *ngFor="let p of postSource">
+                <div class="post_user_img">
+                    <!-- NGIF PROFPICURL -->
+                    <img class="image" [src]="p.userprofurl" alt="user avatar">
+                </div>
+                <div class="post_details_wrapper">
+                    <div class="post_user_details">
+                        <span class="name">{{p.userfname + " " + p.userlname}}</span>
+                        <span class="title">{{"@" + p.usertitle}}</span>
+                    </div>
+                    <div class="post_datetime"> {{p.postcreated | date}}</div>
+                    <div class="post_content_text">{{p.postcontents}}</div>
+                    <div class="post_content_image">
+                        <img [src]="p.postimgurl" alt="">
+                    </div>
+                    <div class="post_options">
+                        <div class="post_like">
+                            <i (click) = "onLikeClick(p)" class="material-icons">thumb_up</i>
+                            <span class="likes_number">{{p.likecount}}</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

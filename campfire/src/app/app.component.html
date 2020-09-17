@@ -1,0 +1,37 @@
+<!-- This is the login page with the login and register components -->
+<div *ngIf="currentUser == null"  id="login_page_wrapper">
+  <div class="wrapper_logo_side"> 
+      <div class="cm_logo">Campfire {{test}}</div>
+      
+  </div>
+  <div class="wrapper_login_signup">
+    <div class="wrapper_login">
+       <app-login *ngIf="resetSelected == false"></app-login> 
+       <app-reset *ngIf="resetSelected == true"></app-reset>
+    </div>
+    <div class="wrapper_sign_up">
+      <app-register></app-register>
+    </div>
+  </div>
+</div>
+
+
+<!-- This the main page after login -->
+<div *ngIf= "currentUser != null" id="main_page_wrapper">
+  <div class="navbar_wrapper">
+    <app-navbar></app-navbar>  <!-- The nav bar components -->
+  </div>
+  <div class="main_wrapper">
+    
+    <div class="header">
+      <app-header></app-header> <!-- Page Title -->
+    </div>
+
+    <div class="router_outlet" id="style-6">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+    <div class="side_wrapper">
+      <app-profile-list></app-profile-list> <!-- The profile list component inclunding filtering -->
+    </div>
+</div>

@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    font: 18px !important;
+    overflow: hidden;
+}
+
+.btn-cm_default {
+    background-color: #00b894;
+    color: white;
+}
+
+.cm_logo {
+    font-family: 'Great Vibes', cursive;
+    color: #fdcb6e;
+    font-size: 4em;
+    padding: 10px 40px;
+}
+
+.btn-cm_default:hover { 
+    background-color: #55efc4 !important;
+    color: white !important;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #00b894 !important;
+}
+
+a:hover {
+    color: #55efc4 !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

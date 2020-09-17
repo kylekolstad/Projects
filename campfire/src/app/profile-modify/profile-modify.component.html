@@ -1,0 +1,29 @@
+<div class="edit_profile_wrapper">
+    <form [formGroup]="updateForm" (ngSubmit)="submit()">
+        <div class="edit_profile_splitter">
+            <div class="picture_change_wrapper">
+                <div class="picture"  [ngStyle]="{backgroundImage: 'url(' + imageURL + ')', backgroundSize: 'cover'}">
+                    <div class="change_option">
+                        <i class="material-icons" (click) = "imageUpload.click()">
+                            camera_enhance
+                        </i>
+                    </div>
+                    <input  style="display: none" type="file" accept="image/*" (change)="showPreview($event)" #imageUpload>
+                </div>
+            </div>
+            <div class="text_content_change_wrapper">
+                <span class="label">Title</span>
+                <div class="title_change">
+                    <input formControlName="title" type="text" [(ngModel)]="title">
+                </div>
+                <span class="label">Bio</span>
+                <div class="bio_change">
+                    <textarea formControlName="bio" [(ngModel)]="bio"></textarea>
+                </div>
+                <div class="update_button">
+                    <button class="btn btn-cm_default my_button" type="submit">Update</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

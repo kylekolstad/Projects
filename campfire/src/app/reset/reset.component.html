@@ -1,0 +1,22 @@
+<form #myForm="ngForm" (ngSubmit)="restPassword(myForm)" ngNativeValidate>
+  <div class="form-row">
+    <div class="col-xs-4">
+      <input type="text" class="form-control" placeholder="Username" name="username" required ngModel>
+    </div>
+    <div class="col-xs-4">
+      <input type="email" class="form-control" placeholder="Email" name="email" required ngModel>
+    </div>
+    <div class="col-xs-3">
+      <button type="submit" class="btn btn-cm_default">Reset</button>
+    </div>
+    <div class="form-row">
+      <div class="col-xs-4">          
+        </div>
+        <div class="col-xs-4">
+          <a  class="cm_forgort_password" (click)="backToLogin()">Back to Login</a>
+        </div>
+        <div class="col-xs-2">          
+        </div>    
+  </div>
+  </div>
+</form>

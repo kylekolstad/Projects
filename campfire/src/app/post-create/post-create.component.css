@@ -1,0 +1,79 @@
+.post_create_wapper {
+    height: 100%;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post_create_wapper textarea {
+    height: 100%;
+    width: 80%;
+    font-size: 1.5em;
+    color: #b2bec3;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 2px solid #eff0f1;
+    resize: none;
+    transition: .3s;
+}
+
+.post_create_wapper textarea::placeholder {
+    color: #b2bec3;
+}
+
+.post_create_wapper textarea:focus {
+    outline: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 2px solid #00b894;
+    -webkit-appearance:none !important;
+}
+
+.post_create_wapper .options {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post_create_wapper .options .add_image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post_create_wapper .options .add_post {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post_create_wapper .options .add_image i,
+.post_create_wapper .options .add_post i {
+    color: #b2bec3;
+    cursor: pointer;
+    font-size: 2.9em !important;
+    transition: .3s;
+}
+
+.post_create_wapper .options .add_image i:hover,
+.post_create_wapper .options .add_post i:hover {
+    color: #00b894;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}

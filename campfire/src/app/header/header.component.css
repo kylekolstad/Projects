@@ -1,0 +1,13 @@
+.header_title {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.header_title span {
+    color: #636e72;
+    font-size: 1.5em;
+    font-weight: 600;
+} 

@@ -1,0 +1,33 @@
+
+.cm_sign_up_main_message {
+    color: #fdcb6e;
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: -5px;
+    margin-left: 20px;
+}
+
+.cm_sign_up_secondary_message {
+    color: #b2bec3;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+input {
+    border: 1px solid #55efc4 !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input::placeholder {
+    color: #55efc4 !important;
+}
+
+.btn-cm_default {
+    width: 100%;
+}
+
+button {
+    margin-top: 15px;
+}
+

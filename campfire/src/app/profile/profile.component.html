@@ -1,0 +1,35 @@
+<div class="show_profile">
+    <div class="profile_div">
+        <div class="profile_wapper">
+            <div *ngIf='currentProfile !== null' class="profile_picture_cover">
+                <div class="profile_picture">          
+                    <div class="image" [ngStyle]="{backgroundImage: 'url(' + currentProfile.cf_User_ProfilePic + ')'}">
+                    </div> 
+                </div>
+            </div>
+            <div class="profile_details">
+                <div class="profile_details_margin"></div>
+                <div *ngIf='currentProfile !== null' class="profile_details_content">
+                    <div class="profile_name">
+                        {{currentProfile.cf_User_Fname + " " + currentProfile.cf_User_Lname}}
+                        <i class="material-icons" [routerLink] = "['/editprofile']">mode_edit</i>
+                    </div>
+                    <div class="profile_title">@{{currentProfile.cf_User_Title}}</div>
+                    <p class="profile_bio">{{currentProfile.cf_User_Bio}} </p>
+                    <div class="profile_location_birthdate">
+                        <div class="profile_location">
+                            <i class="material-icons">location_on</i>
+                            <span>{{currentProfile.city + ', ' + currentProfile.state + ' - ' +  currentProfile.country}}</span>
+                        </div>
+                        <div class="profile_birthdate">
+                            <i class="material-icons">date_range</i>
+                            <span>Born: {{currentProfile.cf_User_Birthday | date: 'MMMM d'}} </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component_spacing"></div>   
+    <app-post-list></app-post-list>
+</div>

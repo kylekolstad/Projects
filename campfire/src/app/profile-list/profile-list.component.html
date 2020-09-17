@@ -1,0 +1,17 @@
+<div class="profile_list_wrapper">
+    <div class="search_bar">
+        <i class="material-icons">search</i>
+        <input type="text" [(ngModel)]='userFilter' placeholder="Search friends ..." >       
+    </div>
+    <div class="number_of_friends">
+        <span>{{myUsersToDisplay.length}} {{myUsersToDisplay.length > 1 ? 'Friends':'Friend'}}</span>
+    </div>
+    <div class="profile_list" id="style-6">       
+        <div class="profile_mini" *ngFor="let user of myUsersToDisplay" (click) = 'setCurrentProfile(user)'>
+            <div class="img">
+                <img [src]='user.cf_User_ProfilePic' alt="">
+            </div>
+            <span>{{user.cf_User_Fname + " " + user.cf_User_Lname}}</span>
+        </div>
+    </div>
+</div>

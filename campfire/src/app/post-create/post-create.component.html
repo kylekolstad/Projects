@@ -1,0 +1,18 @@
+<div class="post_create_wapper">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+        <textarea id="create_post" class="materialize-textarea"
+            placeholder="Here, everyone listens" name='postContents' ngModel></textarea>
+        <div class="options">
+            <input type="file" style="display: none" #fileInput [(ngModel)] = "fileCheck" name ='imgFile' ngModel (change)="fileLoaded($event)">
+            <div class="add_image tooltipped" data-position="bottom" data-tooltip="I am a tooltip"
+                (click)="fileInput.click()">
+                <i class="material-icons">image</i>
+            </div>
+            <div class="add_post">
+                
+                 <i (click)="ourButton.click()" class="material-icons">check</i>
+            </div>
+            <button style="display: none" type="submit" #ourButton>Post</button>
+        </div>
+    </form>
+</div>

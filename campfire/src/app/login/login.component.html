@@ -1,0 +1,25 @@
+<form #myForm="ngForm" (ngSubmit)="login(myForm)" ngNativeValidate>
+    <div class="form-row">
+      <div class="col-xs-4">
+        <input [(ngModel)] = "username" type="text" class="form-control" placeholder="Username" name="username" required ngModel>
+      </div>
+      <div class="col-xs-4">
+        <input [(ngModel)] = "password" type="password" class="form-control" placeholder="Password" name="password" required ngModel>
+      </div>
+      <div class="col-xs-3">
+        <button type="submit" class="btn btn-cm_default" [routerLink] = "['/home']">Login</button>
+      </div>
+    </div>
+    <div class="form-row">
+        <div class="col-xs-4">
+            
+          </div>
+          <div class="col-xs-4">
+            <a class="cm_forgort_password" (click)="goToReset()">forgot password ?</a>
+          </div>
+          <div class="col-xs-2">
+           
+          </div>
+        
+    </div>
+  </form>

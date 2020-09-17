@@ -1,0 +1,11 @@
+input {
+    border: 1px solid #55efc4 !important;
+}
+
+input::placeholder {
+    color: #55efc4 !important;
+}
+
+.btn-cm_default {
+    width: 100%;
+}

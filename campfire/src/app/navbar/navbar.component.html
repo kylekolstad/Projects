@@ -1,0 +1,22 @@
+<div class="navbar_splitter">
+    <div class="cm_logo">Campfire</div>
+    <div class="cm_logo_space"></div>
+    <div class="navbar_links_container">
+        <div id = "mainfeed" (click) = "onFeedClick()" [routerLink] = "['/home']" [routerLinkActive]="'active'" class="navbar_links_item">
+            <i class="material-icons">forum</i>
+            <span >Main Feed</span>
+        </div>
+        <div  id = "profile" (click) = "onProfileClick()" [routerLink] = "['/profile']" [routerLinkActive]="'active'" class="navbar_links_item">
+            <i class="material-icons">accessibility</i>
+            <span >Profile</span>
+        </div>
+        <div id = "settings" (click) = "onSettingsClick()" [routerLink] = "['/editprofile']" [routerLinkActive]="'active'" class="navbar_links_item"> 
+            <i class="material-icons">settings</i>
+            <span>Settings</span>
+        </div>
+        <div id = "logout" class="navbar_links_item" (click) = "onLogoutClick()" [routerLink] = "['/login']">
+            <i class="material-icons">power_settings_new</i>
+            <span>Logout</span>
+        </div>
+    </div>
+</div>
