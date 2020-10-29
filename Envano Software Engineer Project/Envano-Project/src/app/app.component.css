@@ -1,0 +1,14 @@
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Bahnschrift, sans-serif;
+}
+
+.background {
+    background-image: url('../assets/images/background.jpg');
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

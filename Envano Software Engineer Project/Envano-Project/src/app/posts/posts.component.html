@@ -1,0 +1,50 @@
+<section *ngIf="posts$ != null">
+    <section class="firstpost-section" id='top'>
+        <div class='firstpostgrid-container'>
+            <div class="firstpost center">
+                <div class="box">
+                    <img class='firstarticle-image' [src]='getMedia(firstPost$.featured_media)' alt="Image not found" />
+                </div>
+            </div>
+            <div class="firstpost">
+                <div class="date">{{ firstPost$.date | date }}</div>
+                <div class="firstTitle">{{ firstPost$.title.rendered }}</div>
+                <div class="excerpt" [innerHTML]="firstPost$.excerpt.rendered"></div>
+                <table class="author-content">
+                    <tr>
+                        <td>
+                            <img class='avatar' [src]='getUserAvatar(firstPost$.author)' alt="Image not found" onerror="this.src='assets/images/img_avatar.jpg';" /></td>
+                        <td class="author-name large-screen">{{ getUserName(firstPost$.author) }}</td>
+                    </tr>
+                    <tr class="small-screen">
+                        <td class="author-name">{{ getUserName(firstPost$.author) }}</td>
+                    </tr>
+                </table>
+                <button class='envano-colors' (click)="goToPost(firstPost$.link)">READ MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="post-section">
+        <div class="postgrid-container">
+            <div class="post" *ngFor='let post of posts$ | slice:1; let i = index;'>
+                <img class='article-image' [src]='getMedia(post.featured_media)' alt="Image not found" />
+                <div class="title">{{ post.title.rendered }}</div>
+                <div [innerHTML]="post.excerpt.rendered"></div>
+                <button class='envano-colors' (click)="goToPost(post.link)">READ MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <Section class="navlinks-section">
+        <div class='nav-links'>
+            <a *ngIf="getCurrentPage() > 1" class='previouspagination-link' (click)="previousPage()">
+                < Previous Page</a>
+                    <a *ngIf="50 > getCurrentPage()" class='nextpagination-link' (click)="nextPage()">Next Page ></a>
+        </div>
+    </Section>
+</section>
+
+<section class="pagenotfound-error" *ngIf="posts$ == null">
+    <app-pagenotfound></app-pagenotfound>
+</section>
